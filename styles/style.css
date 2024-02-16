@@ -1,0 +1,93 @@
+@font-face {
+    font-family: 'GrandTheftAutoV';
+    src: url('../font/pricedown.ttf') format('ttf');
+}
+
+* {
+    scroll-behavior: smooth;
+    scroll-margin-top: 70px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: rgba(90, 90, 90, 0.7);
+}
+
+/* ----------------------------------------------------- */
+
+header {
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+    color: rgba(90, 90, 90, 0.7);
+    padding: 10px;
+    text-align: center;
+    transition: background-color 0.2s ease-in-out;
+    z-index: 2;
+}
+
+header.scrolled {
+    background-color: rgba(90, 90, 90, 1);
+    box-shadow: 0px 20px 20px 10px rgba(90, 90, 90, 1);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 3.5vh;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+nav a:hover {
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #000000, 0 0 30px #000000, 0 0 40px #000000, 0 0 55px #000000, 0 0 75px #000000;
+    transition: 0.2s;
+}
+
+/* ----------------------------------------------------- */
+
+#img_bg {
+    background-image: url('../img/bg.png');
+    background-size: cover;
+    position: static;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#img_bg #title_main {
+    font-size: 15vh;
+    z-index: 1;
+}
+
+#img_bg #LogoV {
+    width: 25vh;
+    transform: translateY(25%);
+}
+
+#after_img {
+    margin: auto;
+    margin-top: 5%;
+    width: 80%;
+}
+
+#after_img p {
+    margin-left: 3%;
+}
+
+/* ----------------------------------------------------- */
+
